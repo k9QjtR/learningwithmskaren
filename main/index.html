@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learning with Ms. Karen offers fun, educational and entertaining caregiver-and-child classes for ages 0–5 throughout the MOT area." />
+  <title>Learning with Ms. Karen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    SITE CONFIGURATION
+    Edit the SITE_CONFIG and CLASS_DATA constants in script.js.
+    - Change squareUrl once and all booking buttons update automatically.
+    - Add/edit/remove classes in CLASS_DATA once; search, calendar and upcoming classes update automatically.
+  -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">
+        <span class="brand-badge">LMK</span>
+        <span>
+          <strong>Learning with Ms. Karen</strong>
+          <small>Play • Learn • Grow</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#find-class">Find a Class</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#events">Private Events</a>
+        <a href="#locations">Locations</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact">Join a Class</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">Caregiver + child classes • Ages 0–5</div>
+          <h1>Learning through <span>music, movement, play</span> and connection.</h1>
+          <p>
+            Fun, educational and entertaining classes where little learners explore,
+            move, create and grow alongside the caregivers who love them.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#classes">Explore Classes</a>
+            <a class="btn btn-secondary" href="#calendar">See Upcoming Classes</a>
+          </div>
+          <div class="hero-points">
+            <div><span>✓</span> Ages birth–5</div>
+            <div><span>✓</span> Caregiver participates</div>
+            <div><span>✓</span> MOT-area locations</div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="sun-shape"></div>
+            <div class="rainbow">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="bubble b1">♪</div>
+            <div class="bubble b2">ABC</div>
+            <div class="bubble b3">★</div>
+            <div class="people-row">
+              <div class="figure adult"><i></i><b></b></div>
+              <div class="figure child pink"><i></i><b></b></div>
+              <div class="figure child yellow"><i></i><b></b></div>
+            </div>
+            <div class="floor-toys">
+              <span class="toy ball"></span>
+              <span class="toy block">A</span>
+              <span class="toy block two">2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave"></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>Play-based</strong><span>learning that feels natural</span></div>
+        <div><strong>Caregiver-led</strong><span>connection built into every class</span></div>
+        <div><strong>Community-based</strong><span>classes throughout the MOT area</span></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container narrow center">
+        <p class="eyebrow">Why families join</p>
+        <h2>A happy place for little learners and their grown-ups.</h2>
+        <p class="lead">
+          Classes are designed around the way young children learn best — by moving,
+          experimenting, repeating, listening, laughing and playing with someone they trust.
+        </p>
+      </div>
+
+      <div class="container feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon peach">♫</div>
+          <h3>Music & Movement</h3>
+          <p>Singing, rhythm, dancing and movement help children build coordination, language and confidence.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon mint">✦</div>
+          <h3>Sensory Exploration</h3>
+          <p>Hands-on activities encourage curiosity and give children new ways to explore their world.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon blue">♥</div>
+          <h3>Caregiver Connection</h3>
+          <p>Parents and caregivers participate throughout class, creating meaningful shared learning moments.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon yellow">☺</div>
+          <h3>Social Confidence</h3>
+          <p>Children get comfortable being around peers while learning at their own pace in a welcoming environment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section classes" id="classes">
+      <div class="container split-heading">
+        <div>
+          <p class="eyebrow">Class experiences</p>
+          <h2>Fun for every early stage.</h2>
+        </div>
+        <p>
+          Offerings can include recurring sessions, drop-ins, pop-ups and themed experiences.
+          Final class names and schedules can be updated as Ms. Karen's calendar is finalized.
+        </p>
+      </div>
+
+      <div class="container cards-3">
+        <article class="class-card soft-yellow">
+          <div class="age-tag">Babies + caregiver</div>
+          <div class="class-emoji">☁</div>
+          <h3>Little Learners</h3>
+          <p>Gentle music, sensory play, rhythm and bonding activities for the very youngest learners.</p>
+          <ul>
+            <li>Songs and lap play</li>
+            <li>Sensory discovery</li>
+            <li>Caregiver bonding</li>
+          </ul>
+          <a href="#contact">Ask about baby classes →</a>
+        </article>
+
+        <article class="class-card soft-pink">
+          <div class="age-tag">Toddlers + caregiver</div>
+          <div class="class-emoji">♫</div>
+          <h3>Move, Play & Learn</h3>
+          <p>Energetic music, movement and hands-on activities for busy toddlers and their grown-ups.</p>
+          <ul>
+            <li>Gross-motor movement</li>
+            <li>Language and rhythm</li>
+            <li>Interactive play</li>
+          </ul>
+          <a href="#contact">Ask about toddler classes →</a>
+        </article>
+
+        <article class="class-card soft-blue">
+          <div class="age-tag">Preschoolers + caregiver</div>
+          <div class="class-emoji">ABC</div>
+          <h3>Ready, Set, Grow!</h3>
+          <p>Playful early-learning activities that strengthen creativity, confidence and school-readiness skills.</p>
+          <ul>
+            <li>Early literacy</li>
+            <li>Numbers and concepts</li>
+            <li>Creative exploration</li>
+          </ul>
+          <a href="#contact">Ask about preschool classes →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience">
+      <div class="container experience-grid">
+        <div class="photo-placeholder">
+          <div class="photo-label">Add an authentic class photo here</div>
+          <div class="scene">
+            <div class="mat"></div>
+            <div class="circle-person p1"></div>
+            <div class="circle-person p2"></div>
+            <div class="circle-person p3"></div>
+            <div class="circle-person p4"></div>
+          </div>
+        </div>
+        <div class="experience-copy">
+          <p class="eyebrow">What to expect</p>
+          <h2>Come ready to sing, move, laugh and play.</h2>
+          <p>
+            Each class is designed to feel relaxed and welcoming. Children can join activities
+            at their own pace while caregivers model participation and enjoy the experience too.
+          </p>
+          <div class="check-list">
+            <div><span>✓</span><p><strong>Interactive.</strong> Children learn by doing rather than sitting still.</p></div>
+            <div><span>✓</span><p><strong>Developmentally appropriate.</strong> Activities meet children where they are.</p></div>
+            <div><span>✓</span><p><strong>No pressure.</strong> Observing, warming up slowly and repeating favorites are all part of learning.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section class-search-section" id="find-class">
+      <div class="container">
+        <div class="search-heading">
+          <div>
+            <p class="eyebrow">Find a class</p>
+            <h2>Search for the right class for your child.</h2>
+            <p class="lead">
+              Filter by age, location or class type to quickly find an upcoming option that fits your family.
+            </p>
+          </div>
+        </div>
+
+        <div class="class-search-panel">
+          <div class="class-search-controls">
+            <label>
+              Search
+              <input id="classSearchText" type="search" placeholder="Try “music”, “toddler” or “Middletown”" />
+            </label>
+
+            <label>
+              Child's age
+              <select id="classAgeFilter">
+                <option value="all">All ages</option>
+                <option value="baby">Under 1</option>
+                <option value="toddler">1–2 years</option>
+                <option value="preschool">3–5 years</option>
+                <option value="allages">All ages 0–5</option>
+              </select>
+            </label>
+
+            <label>
+              Location
+              <select id="classLocationFilter">
+                <option value="all">All locations</option>
+                <option value="middletown">Middletown</option>
+                <option value="odessa">Odessa</option>
+                <option value="townsend">Townsend</option>
+              </select>
+            </label>
+
+            <label>
+              Class type
+              <select id="classTypeFilter">
+                <option value="all">All class types</option>
+                <option value="music">Music & movement</option>
+                <option value="sensory">Sensory & play</option>
+                <option value="preschool">Preschool enrichment</option>
+                <option value="family">Family pop-up</option>
+              </select>
+            </label>
+
+            <button class="btn btn-secondary clear-search-btn" id="clearClassSearch" type="button">Clear Filters</button>
+          </div>
+
+          <div class="class-search-summary">
+            <strong id="classResultCount">4 classes found</strong>
+            <span>Upcoming classes shown below.</span>
+          </div>
+
+          <div class="search-results-grid" id="classSearchResults"></div>
+
+          <div class="no-class-results" id="noClassResults" hidden>
+            <h3>No classes match those filters.</h3>
+            <p>Try widening the age, location or class type selection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calendar-section" id="calendar">
+      <div class="container">
+        <div class="calendar-heading">
+          <div>
+            <p class="eyebrow">Upcoming classes</p>
+            <h2>Choose a class and reserve your spot.</h2>
+            <p class="lead">Tap a highlighted date to view the sample class, then continue to Square to book.</p>
+          </div>
+          <a class="btn btn-primary" href="#" data-square-link target="_blank" rel="noopener">Book with Square</a>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="calendar-card">
+            <div class="calendar-toolbar">
+              <button class="calendar-arrow" id="prevMonth" type="button" aria-label="Previous month">←</button>
+              <div><strong id="calendarMonth"></strong><span>Upcoming schedule</span></div>
+              <button class="calendar-arrow" id="nextMonth" type="button" aria-label="Next month">→</button>
+            </div>
+            <div class="calendar-weekdays">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+            <div class="calendar-legend">
+              <span><i></i> Class available</span>
+              <span>Tap a highlighted date for details.</span>
+            </div>
+          </div>
+
+          <aside class="upcoming-panel">
+            <p class="eyebrow">Next up</p>
+            <h3>Upcoming Classes</h3>
+            <div class="event-list">
+              <article class="event-card" data-event-date="2026-09-08">
+                <div class="event-date"><strong>8</strong><span>SEP</span></div>
+                <div class="event-info">
+                  <span>Toddlers + caregiver</span>
+                  <h4>Move, Play & Learn</h4>
+                  <p>10:00 AM • Middletown, DE</p>
+                  <a href="#" data-square-link target="_blank" rel="noopener">Book this class →</a>
+                </div>
+              </article>
+              <article class="event-card" data-event-date="2026-09-12">
+                <div class="event-date"><strong>12</strong><span>SEP</span></div>
+                <div class="event-info">
+                  <span>Babies + caregiver</span>
+                  <h4>Little Learners</h4>
+                  <p>9:30 AM • Odessa, DE</p>
+                  <a href="#" data-square-link target="_blank" rel="noopener">Book this class →</a>
+                </div>
+              </article>
+              <article class="event-card" data-event-date="2026-09-19">
+                <div class="event-date"><strong>19</strong><span>SEP</span></div>
+                <div class="event-info">
+                  <span>Preschoolers + caregiver</span>
+                  <h4>Ready, Set, Grow!</h4>
+                  <p>11:00 AM • Townsend, DE</p>
+                  <a href="#" data-square-link target="_blank" rel="noopener">Book this class →</a>
+                </div>
+              </article>
+              <article class="event-card" data-event-date="2026-09-26">
+                <div class="event-date"><strong>26</strong><span>SEP</span></div>
+                <div class="event-info">
+                  <span>All ages 0–5</span>
+                  <h4>Saturday Family Pop-Up</h4>
+                  <p>10:30 AM • Middletown, DE</p>
+                  <a href="#" data-square-link target="_blank" rel="noopener">Book this class →</a>
+                </div>
+              </article>
+            </div>
+            <div class="square-note">
+              <strong>Online booking</strong>
+              <p>Reserve your spot securely through Square.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section private-events" id="events">
+      <div class="container">
+        <div class="events-heading">
+          <div>
+            <p class="eyebrow">Private & special events</p>
+            <h2>Bring Learning with Ms. Karen to your celebration or group.</h2>
+          </div>
+          <p class="lead">
+            Create a playful, age-appropriate experience for birthdays, family gatherings,
+            playgroups, schools, community events and other special occasions.
+          </p>
+        </div>
+
+        <div class="event-type-grid">
+          <article class="event-type-card">
+            <div class="event-icon">🎈</div>
+            <h3>Birthday Parties</h3>
+            <p>Interactive music, movement and play designed around your child's age group and celebration.</p>
+          </article>
+          <article class="event-type-card">
+            <div class="event-icon">👨‍👩‍👧‍👦</div>
+            <h3>Private Playgroups</h3>
+            <p>Host a custom class for friends, neighborhood families or an existing parent group.</p>
+          </article>
+          <article class="event-type-card">
+            <div class="event-icon">🏫</div>
+            <h3>Schools & Daycares</h3>
+            <p>Special enrichment sessions for preschools, childcare centers and early-learning programs.</p>
+          </article>
+          <article class="event-type-card">
+            <div class="event-icon">✨</div>
+            <h3>Community Events</h3>
+            <p>Family days, seasonal events, festivals, libraries and local community programming.</p>
+          </article>
+        </div>
+
+        <div class="event-inquiry-wrap">
+          <div class="event-inquiry-copy">
+            <p class="eyebrow">Plan something special</p>
+            <h3>Tell Ms. Karen about your event.</h3>
+            <p>
+              Share the date, approximate number of children, age range and event type.
+              A custom experience can be built around your group.
+            </p>
+            <ul class="event-details-list">
+              <li>Custom themes and activities</li>
+              <li>Flexible group sizes</li>
+              <li>MOT-area and nearby locations</li>
+              <li>Birthday, school and community options</li>
+            </ul>
+            <a class="btn btn-secondary" href="#" data-square-link target="_blank" rel="noopener">Square Event Booking Placeholder</a>
+          </div>
+
+          <form class="event-form" id="eventInquiryForm">
+            <div class="form-row">
+              <label>
+                Your name
+                <input type="text" name="event_name" placeholder="Your name" required />
+              </label>
+              <label>
+                Event type
+                <select name="event_type" required>
+                  <option value="">Choose event</option>
+                  <option>Birthday party</option>
+                  <option>Private playgroup</option>
+                  <option>School or daycare</option>
+                  <option>Community event</option>
+                  <option>Other special event</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Preferred date
+                <input type="date" name="event_date" />
+              </label>
+              <label>
+                Number of children
+                <input type="number" name="children_count" min="1" max="100" placeholder="Approximate" />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Age range
+                <input type="text" name="age_range" placeholder="Example: 2–4 years" />
+              </label>
+              <label>
+                Location
+                <input type="text" name="event_location" placeholder="City or venue" />
+              </label>
+            </div>
+
+            <label>
+              Email
+              <input type="email" name="event_email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Tell us about your event
+              <textarea name="event_message" rows="4" placeholder="Theme, timing, special requests, or anything else Ms. Karen should know."></textarea>
+            </label>
+
+            <button class="btn btn-primary form-button" type="submit">Request Event Information</button>
+            <p class="form-note" id="eventFormNote">
+              Submit your event details and Ms. Karen can follow up with availability and next steps.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations" id="locations">
+      <div class="container location-grid">
+        <div>
+          <p class="eyebrow light">Local classes</p>
+          <h2>Learning with Ms. Karen comes to families throughout the MOT area.</h2>
+          <p>
+            Classes are held at various community locations across Middletown,
+            Odessa and Townsend, Delaware.
+          </p>
+          <p class="location-note">Exact locations may vary by class, session or event.</p>
+          <a class="btn btn-light" href="#contact">Find an Upcoming Class</a>
+        </div>
+        <div class="map-card">
+          <div class="map-blob">
+            <span class="map-title">MOT</span>
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+            <span class="dot d3"></span>
+          </div>
+          <div class="place-list">
+            <span>Middletown</span>
+            <span>Odessa</span>
+            <span>Townsend</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonial">
+      <div class="container quote-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “A class should feel like quality time together — full of fun, discovery
+          and little moments you’ll want to remember.”
+        </blockquote>
+        <cite>Learning with Ms. Karen</cite>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Join the fun</p>
+          <h2>Find the right class for your little learner.</h2>
+          <p class="lead">
+            Share your child’s age and we can point you toward an upcoming class
+            or special event in the MOT area.
+          </p>
+
+          <div class="booking-box">
+            <span>Ready to reserve a spot?</span>
+            <a class="btn btn-primary" href="#" data-square-link target="_blank" rel="noopener">Book a Class with Square</a>
+          </div>
+          <div class="facebook-box">
+            <span>Follow class announcements</span>
+            <a href="https://www.facebook.com/learningwithmskaren/" target="_blank" rel="noopener">Facebook: Learning with Ms. Karen →</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="interestForm">
+          <div class="form-row">
+            <label>
+              Caregiver name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Child's age
+              <select name="age" required>
+                <option value="">Select age</option>
+                <option>Under 1</option>
+                <option>1 year</option>
+                <option>2 years</option>
+                <option>3 years</option>
+                <option>4 years</option>
+                <option>5 years</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Interested in
+            <select name="interest">
+              <option>Any upcoming class</option>
+              <option>Baby class</option>
+              <option>Toddler class</option>
+              <option>Preschool class</option>
+              <option>Pop-up or special event</option>
+            </select>
+          </label>
+          <label>
+            Message <span>(optional)</span>
+            <textarea name="message" rows="4" placeholder="Anything you'd like Ms. Karen to know?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary form-button">Send My Interest</button>
+          <p id="formNote" class="form-note">Share your information and Ms. Karen can follow up with upcoming class options.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container narrow center">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="container faq-list">
+        <details>
+          <summary>What ages are classes for?</summary>
+          <p>Learning with Ms. Karen focuses on children from birth through age 5, with caregiver participation.</p>
+        </details>
+        <details>
+          <summary>Does a caregiver stay during class?</summary>
+          <p>Yes. These are caregiver-and-child experiences, so grown-ups participate alongside their child.</p>
+        </details>
+        <details>
+          <summary>Where are classes held?</summary>
+          <p>Classes take place at various locations throughout Middletown, Odessa and Townsend. Exact locations may vary by session.</p>
+        </details>
+        <details>
+          <summary>Do we need to bring anything?</summary>
+          <p>Comfortable clothes and a willingness to play are the essentials. Any class-specific items can be shared before the session.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Learning with Ms. Karen</strong>
+        <p>Fun, educational caregiver-and-child classes for ages 0–5.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#classes">Classes</a>
+        <a href="#find-class">Find a Class</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#events">Private Events</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Join a Class</a>
+        <a href="https://www.facebook.com/learningwithmskaren/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <small>© <span id="year"></span> Learning with Ms. Karen</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<!-- End of Sites-ready standalone file -->
+</html>

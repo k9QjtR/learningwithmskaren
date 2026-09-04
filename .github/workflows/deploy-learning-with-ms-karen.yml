@@ -1,0 +1,36 @@
+name: Deploy Learning with Ms Karen to AWS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "main/**"
+      - ".github/workflows/deploy-learning-with-ms-karen.yml"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          role-to-assume: ${{ secrets.AWS_LEARNINGWITHMSKAREN_DEPLOY_ROLE_ARN }}
+          aws-region: us-east-2
+
+      - name: Deploy Learning with Ms Karen to S3
+        run: aws s3 sync ./main s3://learning-with-ms-karen-prod --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E20EVA466KOP5P \
+            --paths "/*"

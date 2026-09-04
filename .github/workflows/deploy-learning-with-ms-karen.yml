@@ -27,7 +27,7 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy Learning with Ms Karen to S3
-        run: aws s3 sync ./main s3://learning-with-ms-karen-prod --delete
+        run: aws s3 sync ./mainpage s3://learning-with-ms-karen-prod --delete
 
       - name: Invalidate CloudFront cache
         run: |

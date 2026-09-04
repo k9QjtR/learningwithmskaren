@@ -23,7 +23,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v5
         with:
-          role-to-assume: ${{ secrets.AWS_LEARNINGWITHMSKAREN_DEPLOY_ROLE_ARN }}
+          role-to-assume: "arn:aws:iam::981158178644:role/GitHubActionsResumeDeployRole"
+          #role-to-assume: ${{ secrets.AWS_LEARNINGWITHMSKAREN_DEPLOY_ROLE_ARN }}
           aws-region: us-east-2
 
       - name: Deploy Learning with Ms Karen to S3

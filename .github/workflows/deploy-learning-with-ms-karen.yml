@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "main/**"
+      - "mainpage/**"
       - ".github/workflows/deploy-learning-with-ms-karen.yml"
 
 permissions:
